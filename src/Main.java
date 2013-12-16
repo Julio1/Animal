@@ -19,14 +19,17 @@ public class Main{
 
 	public static void main(String[] args)throws java.io.IOException{
 
-	
-	Caballo miCaballo= new Caballo ("Mr. Ed", "Pura Sangre");
-	
-	 out.println(miCaballo.toString());
-	
-   
+//	
+//	Caballo miCaballo= new Caballo ("Justo Orozco", "Pura Sangre");
+//	
+//	 out.println(miCaballo.toString());
+//	
+//		Caballo miCaballo= new Caballo ();
+		
+		out.println(Caballo.edad);
         
-     
+		Caballo miCaballo= new Caballo ("Justo Orozco", "Pura Sangre");
+		out.println(miCaballo.toString());
 }
 
 }

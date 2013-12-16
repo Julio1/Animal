@@ -4,7 +4,7 @@ public class Caballo implements Animal {
 	
 	private String nombre;
 	private	String tipo;
-	
+	static int edad=12;
 	
 	public Caballo (String pnombre, String ptipo) {
 	
@@ -42,6 +42,7 @@ public class Caballo implements Animal {
 	    	result = "*****Informacion del Animal****** " +  "\n";
 	    	result += "Nombre #: " + getNombre() +  "\n";
 	    	result += "Tipo: " + getTipo() +  "\n";
+	    	result += "Edad: " + edad +  "\n";
 
 	    return result;
 
