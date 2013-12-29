@@ -16,6 +16,12 @@ public class Caballo implements Animal {
 		setId();
 	} 
 	
+	public Caballo () {
+		
+	
+		setId();
+	} 
+	
 	public void setId(){
 		cantCaballo++;
 		id=cantCaballo;
