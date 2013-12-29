@@ -4,23 +4,29 @@ public class Caballo implements Animal {
 	
 	private String nombre;
 	private	String tipo;
-	static int edad=12;
+	private int edad;
+	static int cantCaballo=0;
+	private int id;
 	
-	public Caballo (String pnombre, String ptipo) {
+	public Caballo (String pnombre, String ptipo,int pedad) {
 	
-		setTipo(ptipo);
 		setNombre(pnombre);	
+		setTipo(ptipo);
+		setEdad(pedad);	
+		setId();
 	} 
 	
-
-	public void setTipo(String pnombre) {
-		nombre=pnombre;
-		
+	public void setId(){
+		cantCaballo++;
+		id=cantCaballo;
 	}
 	
-	public void setNombre(String ptipo) {
-		tipo=ptipo;
-		
+	public void setTipo(String ptipo) {
+		tipo=ptipo;		
+	}
+	
+	public void setNombre(String pnombre) {
+		nombre=pnombre;		
 	}
 	
 
@@ -34,18 +40,49 @@ public class Caballo implements Animal {
 		return nombre;
 	}
 
+	public int getEdad() {
+		return edad;
+	}
+
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
+	public static int getCantCaballo() {
+		return cantCaballo;
+	}
+
+	public static void setCantCaballo(int cantCaballo) {
+		Caballo.cantCaballo = cantCaballo;
+	}
+
 	
 	   public String toString(){
 
 	    	String result;
 	    	
 	    	result = "*****Informacion del Animal****** " +  "\n";
-	    	result += "Nombre #: " + getNombre() +  "\n";
+	    	result += "Nombre: " + getNombre() +  "\n";
 	    	result += "Tipo: " + getTipo() +  "\n";
-	    	result += "Edad: " + edad +  "\n";
+	    	result += "Edad: " + getEdad() +  "\n";
+	    	result += "Cantidad de caballo: " +getCantCaballo()+  "\n";
+	    	result += "ID del caballo: " + getId() +  "\n";
+	    		    	
 
 	    return result;
 
 	    }
+
+
 	
 }
