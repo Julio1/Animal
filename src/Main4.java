@@ -50,7 +50,7 @@ public class Main4{
 		
 		
 		
-		Iterator elIterador = (Iterator) listaCaballos.iterator();
+		Iterator<Caballo> elIterador = (Iterator<Caballo>) listaCaballos.iterator();
 		while(elIterador.hasNext())	{
 		   
 			Caballo caballoRevisado = (Caballo) elIterador.next();
