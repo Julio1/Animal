@@ -27,9 +27,9 @@ public class Main4{
 	
 
 		
-		Caballo miCaballo= new Caballo ("Juo", "Pura Sangre", 12);
-		Caballo desampa= new Caballo ("Raiam", "Callejero", 1);
-		Caballo aserri= new Caballo ("Juo", "Piedrota", 20);
+		Caballo miCaballo= new Caballo ("Juo", "Pura Sangre", 50);
+		Caballo desampa= new Caballo ("Raiam", "Callejero", 57);
+		Caballo aserri= new Caballo ("Juo", "Piedrota", 85);
 		
 		listaCaballos.add(miCaballo);
 		listaCaballos.add(desampa);
